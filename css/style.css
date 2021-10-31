@@ -89,7 +89,7 @@ body {
 
 #contact-information {
 	border-style: double;
-	border-width: 2px;
+	border-width: 2px;	
 	border-color: #0011FF;
 }
 
@@ -268,6 +268,10 @@ body #title {
 	background-color: #EEEEEE;
 }
 
+#paris-link, #tokyo-link {
+	padding-right: 7vw;
+}
+
 #contact-body {
 	display: grid;
 	margin-left: 8px;
@@ -353,7 +357,6 @@ table th, table td {
 	float: right;
 }
 
-
 }
 
 @media screen and (max-width: 1179px) and (min-width: 601px) {
@@ -362,6 +365,14 @@ table th, table td {
 #bestdestinations-body {background-color: #FF6700;}
 #tickets-body {background-color: #FF6700;}
 #contact-body {background-color: #FF6700;}
+
+#paris-link, #tokyo-link {
+	padding-right: 20vw;
+}
+
+#marmaris-link {
+	padding-right: 28vw;
+}
 
 #logo {
 	margin: 3px;
