@@ -609,6 +609,10 @@ table th, table td {
 	display: none;
 }
 
+#index-body #promotion-movie {
+	display: none;
+}
+
 #index-body #logo {
 	display: none;
 }
