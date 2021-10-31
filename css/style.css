@@ -1,0 +1,612 @@
+@import url(https://fonts.googleapis.com/css?family=Notable);
+
+body {
+	font-size: 16px;
+	font-family: Arial, Helvetica and sans-serif;
+	letter-spacing: 1px;
+	line-height: 1.4;
+	word-spacing: 1.5px;
+	background-color: #C5C5C5;
+}
+
+#contact-legend {
+	text-transform: uppercase;
+}
+
+#tickets-body img {
+	flex-shrink: 3;
+}
+
+#contact-information {
+	border-style: double;
+	border-width: 2px;
+	border-color: #0011FF;
+}
+
+#tickets-table th:first-child {
+	background-color: #FF0;
+}
+
+#tickets-table tr:nth-child(even) {
+	background-color: #CFF;
+}
+
+#tickets-table tr:nth-child(odd) {
+	background-color: #FFF;
+}
+
+#contact-body .traffic-text:first-letter{
+	font-size: 150%;
+}
+
+#logo {
+	margin: 3px;
+}
+
+#index-body {
+	flex-direction: column;
+	display: flex;
+	background-color : #EEEEEE;
+}
+
+#index-body #logo {
+	float: left;
+}
+
+#index-body #logo, #title, #payoff {
+	display: flex;
+	flex-direction: row;
+}
+
+#index-articles {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#index-body #author-info {
+	align-self: flex-end;
+}
+
+.cookie_statement {
+	position: fixed;
+	bottom: 0;
+	width: 100%;  
+	background-color: #FA0;
+	opacity: 50%;
+	text-align: center;
+	color: #FFF;
+	z-index: 9999;
+	font-size: 16px;
+}
+
+#index-body .cookie_statement {
+	justify-content: flex-end;
+	align-self: flex-end;
+	width: 23%;	
+}
+
+.copyright_text {
+	margin: 0;
+	font-size: 12px;
+}
+
+body #title {
+	margin-top: -10px;
+	margin-bottom: -20px;
+}
+
+header > h1 {
+	margin-bottom: -15px;
+}
+
+h1 + h2 {
+	word-spacing: 5px;
+}
+
+#hamburger-nav {
+	width: 100%;
+	background: #ff5555;
+}
+
+#hamburger-nav label, #hamburger-button {
+	display: none;
+}
+
+#hamburger-link {
+	display: flex;
+}
+
+#hamburger-nav li a {
+	flex-grow: 1;
+	flex-basis: auto;
+	padding: 4px;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+}
+
+#bestdestinations-body {
+	background-color: #EEDFDE;
+}
+
+#tickets-body {
+	background-color: #FFFFCC;
+}
+
+#contact-body {
+	background-color: #CCFEFE;
+}
+
+a:hover {
+	/* you can't use cmyk properties in css so i'm using the rgb value */
+	color: #FFC72B;
+}
+
+a:active {
+	color: #11FF55;
+	background-color: #FF3121;
+}
+
+.payoff {
+	text-indent: 2.5rem;
+}
+
+[type=text], [type=tel] {
+	width: 100%;
+}
+
+table {
+	overflow-x: auto;
+}
+
+#sidenote {
+	opacity: 60%;
+	margin-top: 2px;
+}
+
+body #title {
+	font-family: Notable;
+}
+
+.traffic-images {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.traffic-text {
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+
+#tickets-table {
+	border: 1px solid black;
+}
+
+
+#logo {
+	margin-right: 10px;
+}
+
+#index-body aside {
+	position: fixed;
+	left: 75%;
+	top: 60%;
+}
+/* min-width of 1180px because css width in device definition is wrong */
+@media screen and (min-width: 1180px) {
+#index-body {
+	background-color: #EEEEEE;
+}
+
+#contact-body {
+	display: grid;
+	margin-left: 8px;
+	grid-template-columns: 35% 30% 35%;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+	grid-gap: 8px;
+}
+
+#hamburger-nav, #traffic-products, #contact-information, #contact-form {
+	display: grid;
+}
+
+#contact-body #logo {grid-area: 1 / 1 / span 1 / span 3;}
+#contact-body #title {grid-area: 2 / 1 / span 1 / span 3;}
+#contact-body #payoff {grid-area: 3 / 1 / span 1 / span 3;}
+#contact-body #hamburger-nav {grid-area: 4 / 1 / span 1 / span 3;}
+#contact-body #contact-information {grid-area: 5 / 1 / span 1 / span 3;}
+#contact-body #contact-form {grid-area: 6 / 1 / span 5 / span 2;}
+#contact-body #contact-product1 {grid-area: 6 / 3 / span 2 / span 1;}
+#contact-body #contact-product2 {grid-area: 8 / 3 / span 1 / span 1;}
+#contact-body #contact-product3 {grid-area: 9 / 3 / span 1 / span 1;}
+#contact-body #author-info {grid-area: 11 / 1 / span 2 / span 2;}
+#contact-body .cookie_statement {width: 35%; right: 0;}
+
+table th, table td {
+	border: 1px solid #000000;
+}
+
+#tickets-body {
+	display: grid;
+	margin-left: 8px;
+	grid-template-columns: 40% 35% 25%;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+	grid-gap: 8px;
+}
+
+#tickets-article, #tickets-table, #copyright-table, #tickets-products {
+	display: grid;
+}
+
+#tickets-body #logo {grid-area: 1 / 1 / span 1 / span 3;}
+#tickets-body #title {grid-area: 2 / 1 / span 1 / span 3;}
+#tickets-body #payoff {grid-area: 3 / 1 / span 1 / span 3;}
+#tickets-body #hamburger-nav {grid-area: 4 / 1 / span 1 / span 3;}
+#tickets-body #tickets-article {grid-area: 5 / 1 / span 1 / span 3;}
+#tickets-body #tickets-table {grid-area: 6 / 1 / span 5 / span 2;}
+#tickets-body #copyright-table {grid-area: 11 / 1 / span 1 / span 2;}
+#tickets-body #table-product1 {grid-area: 6 / 3 / span 2 / span 1;}
+#tickets-body #table-product2 {grid-area: 8 / 3 / span 1 / span 1;}
+#tickets-body #table-product3 {grid-area: 9 / 3 / span 1 / span 1;}
+#tickets-body #author-info {grid-area: 12 / 1 / span 2 / span 2;}
+#tickets-body .cookie_statement {width: 25%; right: 0;}
+
+#bestdestinations-body {
+	display: grid;
+	margin-left: 8px;
+	grid-template-columns: 33% 33% 34%;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+	grid-gap: 8px;
+}
+
+#bestdestinations-body #logo {grid-area: 1 / 1 / span 1 / span 3;}
+#bestdestinations-body #title {grid-area: 2 / 1 / span 1 / span 3;}
+#bestdestinations-body #payoff {grid-area: 3 / 1 / span 1 / span 3;}
+#bestdestinations-body #hamburger-nav {grid-area: 4 / 1 / span 1 / span 3;}
+#bestdestinations-body #destination1 {grid-area: 5 / 2 / span 6 / span 1;}
+#bestdestinations-body #destination2 {grid-area: 5 / 1 / span 2 / span 1;}
+#bestdestinations-body #destination3 {grid-area: 5 / 3 / span 3 / span 1;}
+#bestdestinations-body #destination4 {grid-area: 8 / 3 / span 3 / span 1;}
+#bestdestinations-body #destination5 {grid-area: 7 / 1 / span 5 / span 1;}
+#bestdestinations-body #destination6 {grid-area: 11 / 2 / span 1 / span 2;}
+#bestdestinations-body #product1 {grid-area: 12 / 1 / span 2 / span 1;}
+#bestdestinations-body #product2 {grid-area: 12 / 2 / span 2 / span 1;}
+#bestdestinations-body #product3 {grid-area: 12 / 3 / span 2 / span 1;}
+#bestdestinations-body #author-info {grid-area: 14 / 1 / span 2 / span 2;}
+#bestdestinations-body .cookie_statement {width: 34%; right: 0;}
+
+#bestdestinations-products {
+	display: grid;
+}
+
+#index-body img {
+	float: right;
+}
+
+
+}
+
+@media screen and (max-width: 1179px) and (min-width: 601px) {
+/* Other background colors to know which media query i'm on */
+#index-body {background-color: #FF6700;}
+#bestdestinations-body {background-color: #FF6700;}
+#tickets-body {background-color: #FF6700;}
+#contact-body {background-color: #FF6700;}
+
+#logo {
+	margin: 3px;
+}
+
+#contact-body {
+	display: grid;
+	margin-left: 8px;
+	grid-template-columns: 75% 25%;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+	grid-gap: 8px;
+}
+
+#hamburger-nav, #traffic-products, #contact-information, #contact-form {
+	display: grid;
+}
+
+#contact-body #logo {grid-area: 1 / 1 / span 1 / span 2;}
+#contact-body #title {grid-area: 2 / 1 / span 1 / span 2;}
+#contact-body #payoff {grid-area: 3 / 1 / span 1 / span 2;}
+#contact-body #hamburger-nav {grid-area: 4 / 1 / span 1 / span 2;}
+#contact-body #contact-information {grid-area: 5 / 1 / span 1 / span 2;}
+#contact-body #contact-form {grid-area: 6 / 1 / span 6 / span 1;}
+#contact-body #contact-product1 {grid-area: 6 / 2 / span 2 / span 1;}
+#contact-body #contact-product2 {grid-area: 8 / 2 / span 1 / span 1;}
+#contact-body #contact-product3 {grid-area: 9 / 2 / span 1 / span 1;}
+#contact-body #author-info {grid-area: 12 / 1 / span 2 / span 1;}
+#contact-body .cookie_statement {width: 25%; right: 0;}
+
+#tickets-table th, #tickets-table td {
+	border: 1px solid #000000;
+}
+
+#tickets-body {
+	display: grid;
+	margin-left: 8px;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+	grid-gap: 8px;
+}
+
+#tickets-article, #tickets-table, #copyright-table, #tickets-products {
+	display: grid;
+}
+
+#tickets-body #logo {grid-area: 1 / 1 / span 1 / span 2;}
+#tickets-body #title {grid-area: 2 / 1 / span 1 / span 2;}
+#tickets-body #payoff {grid-area: 3 / 1 / span 1 / span 2;}
+#tickets-body #hamburger-nav {grid-area: 4 / 1 / span 1 / span 2;}
+#tickets-body #tickets-article {grid-area: 5 / 1 / span 1 / span 2;}
+#tickets-body #tickets-table {grid-area: 6 / 1 / span 5 / span 2;}
+#tickets-body #copyright-table {grid-area: 11 / 1 / span 1 / span 2;}
+#tickets-body #table-product1 {display: none;}
+#tickets-body #table-product2 {grid-area: 12 / 1 / span 2 / span 1;}
+#tickets-body #table-product3 {grid-area: 12 / 2 / span 2 / span 1;}
+#tickets-body #author-info {grid-area: 14 / 1 / span 2 / span 1;}
+#tickets-body .cookie_statement {width: 50%; right: 0;}
+
+#bestdestinations-body {
+	display: grid;
+	margin-left: 8px;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+	grid-gap: 8px;
+}
+
+#bestdestinations-body #logo {grid-area: 1 / 1 / span 1 / span 2;}
+#bestdestinations-body #title {grid-area: 2 / 1 / span 1 / span 2;}
+#bestdestinations-body #payoff {grid-area: 3 / 1 / span 1 / span 2;}
+#bestdestinations-body #hamburger-nav {grid-area: 4 / 1 / span 1 / span 2;}
+#bestdestinations-body #destination1 {grid-area: 5 / 1 / span 2 / span 1;}
+#bestdestinations-body #destination2 {grid-area: 5 / 2 / span 3 / span 1;}
+#bestdestinations-body #destination3 {grid-area: 7 / 1 / span 4 / span 1;}
+#bestdestinations-body #destination4 {display: none;}
+#bestdestinations-body #destination5 {grid-area: 8 / 2 / span 3 / span 1;}
+#bestdestinations-body #destination6 {grid-area: 11 / 1 / span 2 / span 2;}
+#bestdestinations-body #product1 {grid-area: 13 / 1 / span 2 / span 1;}
+#bestdestinations-body #product2 {grid-area: 13 / 2 / span 2 / span 1;}
+#bestdestinations-body #product3 {display:none;}
+#bestdestinations-body #author-info {grid-area: 15 / 1 / span 2 / span 1;}
+#bestdestinations-body .cookie_statement {width: 50%; right: 0;}
+
+#destinations {
+	display: grid;
+}
+
+#bestdestinations-products {
+	display: grid;
+}
+
+#index-body img {
+	float: right;
+}
+
+#index-body #author-info {
+	justify-content: flex-end;
+	align-self: flex-start;
+}
+
+#index-body aside {
+	position: fixed;
+	left: 0;
+	top: 42%;
+}
+
+#index-body video {
+	margin-top: 110px;
+}
+
+#index-body img {
+	float: left;
+}
+
+#dalyan-article {
+	order: 3;
+}
+
+#istanbul-article {
+	order: 2;
+}
+
+#crete-article {
+	order: 1;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+/* Other background colors to know which media query i'm on part 2 */
+#index-body {
+	background-color: #FFFF00;
+	display: flex;
+}
+#index-body {background-color: #FFFF00;}
+#bestdestinations-body {background-color: #FFFF00;}
+#tickets-body {background-color: #FFFF00;}
+#contact-body {background-color: #FFFF00;}
+
+#logo {
+	margin: 3px;
+}
+
+#contact-body {
+	display: grid;
+	margin-left: 8px;
+	grid-template-columns: 65% 35%;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+	grid-gap: 8px;
+}
+
+#hamburger-nav, #traffic-products, #contact-information, #contact-form {
+	display: grid;
+}
+
+#contact-body #logo {display: none;}
+#contact-body #title {grid-area: 1 / 1 / span 1 / span 1;}
+#contact-body #payoff {grid-area: 2 / 1 / span 1 / span 1;}
+#contact-body #hamburger-nav {grid-area: 1 / 2 / span 2 / span 1;}
+#contact-body #contact-information {grid-area: 3 / 1 / span 1 / span 2;}
+#contact-body #contact-form {grid-area: 4 / 1 / span 5 / span 2;}
+#contact-body #contact-product1 {grid-area: 9 / 1 / span 2 / span 2;}
+#contact-body #contact-product2 {grid-area: 11 / 1 / span 1 / span 2;}
+#contact-body #contact-product3 {grid-area: 12 / 1 / span 1 / span 2;}
+#contact-body #author-info {grid-area: 13 / 1 / span 2 / span 1}
+#contact-body .cookie_statement {width: 35%; right: 0;}
+
+#tickets-table th, #tickets-table td {
+	border: 1px solid #000000;
+}
+
+#tickets-body {
+	display: grid;
+	margin-left: 8px;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+	grid-gap: 8px;
+}
+
+#tickets-article, #tickets-table, #copyright-table, #tickets-products {
+	display: grid;
+}
+
+#tickets-body #logo {display: none;}
+#tickets-body #title {grid-area: 1 / 1 / span 1 / span 1;}
+#tickets-body #payoff {grid-area: 2 / 1 / span 1 / span 1;}
+#tickets-body #hamburger-nav {grid-area: 1 / 2 / span 2 / span 1;}
+#tickets-body #tickets-article {display: none;}
+#tickets-body #tickets-table {grid-area: 3 / 1 / span 5 / span 2;}
+#tickets-body #copyright-table {grid-area: 8 / 1 / span 1 / span 2;}
+#tickets-body #table-product1 {grid-area: 9 / 1 / span 2 / span 2;}
+#tickets-body #table-product2 {grid-area: 11 / 1 / span 1 / span 2;}
+#tickets-body #table-product3 {grid-area: 12 / 1 / span 1 / span 2;}
+#tickets-body #author-info {grid-area: 13 / 1 / span 2 / span 1;}
+#tickets-body .cookie_statement {width: 50%; right: 0;}
+
+#bestdestinations-body {
+	display: grid;
+	margin-left: 8px;
+	grid-template-columns: 67% 33%;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+	grid-gap: 8px;
+}
+
+#bestdestinations-body #logo {display: none;}
+#bestdestinations-body #title {grid-area: 1 / 1 / span 1 / span 1;}
+#bestdestinations-body #payoff {grid-area: 2 / 1 / span 1 / span 1;}
+#bestdestinations-body #hamburger-nav {grid-area: 1 / 2 / span 2 / span 1;}
+#bestdestinations-body #destination1 {grid-area: 12 / 1 / span 3 / span 2;}
+#bestdestinations-body #destination2 {grid-area: 9 / 1 / span 3 / span 2;}
+#bestdestinations-body #destination3 {grid-area: 6 / 1 / span 3 / span 2;}
+#bestdestinations-body #destination4 {display: none;}
+#bestdestinations-body #destination5 {grid-area: 3 / 1 / span 3 / span 2}
+#bestdestinations-body #destination6 {display: none;}
+#bestdestinations-body #product1 {grid-area: 15 / 1 / span 1 / span 2;}
+#bestdestinations-body #product2 {grid-area: 17 / 1 / span 1 / span 2;}
+#bestdestinations-body #product3 {grid-area: 18 / 1 / span 1 / span 2;}
+#bestdestinations-body #author-info {grid-area: 19 / 1 / span 2 / span 1;}
+#bestdestinations-body .cookie_statement {width: 33%; right: 0;}
+
+#destinations {
+	display: grid;
+}
+
+#bestdestinations-products {
+	display: grid;
+}
+
+#index-body video {
+	display: none;
+}
+
+#index-body #logo {
+	display: none;
+}
+
+#index-body #crete-article {
+	margin-top: 70px;
+}
+
+#index-body aside {
+	position: fixed;
+	left: 0;
+	top: 15%;
+}
+
+#hamburger-nav li a {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+#hamburger-nav label {
+	display: inline-block;
+	color: #000000;
+	background: #00FFFF;
+	font-size: 20px;
+	padding: 1em;
+}
+
+#hamburger-links {
+	display: none;
+	list-style-type: none;
+}
+
+#hamburger-nav input:checked ~ #hamburger-links {
+	display: block;
+}
+
+.article-main {
+	align-items: flex-start;
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+
+.article-link {
+	align-self: flex-end;
+}
+
+#dalyan-article {
+	order: 3;
+}
+
+#istanbul-article {
+	order: 2;
+}
+
+#crete-article {
+	order: 1;
+}
+
+#index-articles a {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#index-body #hamburger-nav {
+	width: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	align-self: flex-end;
+}
+
+#index-body {
+	font-size: 12px;
+}
+
+#index-body #author-info {
+	align-self: flex-start;
+	font-size: 16px;
+	margin-bottom: 42px;
+}
+
+#index-body .cookie_statement {
+	width: 33%;
+}
+
+}

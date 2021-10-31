@@ -1,70 +1,123 @@
-<html>
+<!DOCTYPE html>
 
-<head lang = en>
+<head lang="en">
 	<meta charset="utf-8" />
-	<meta name="description" content="Assignment 3.2 | Inholland" />
+	<meta name="description" content="Hello and welcome to my website. My name is Sem Plaatsman and I made this website for an assignment from Hogeschool Inholland Haarlem. 
+	My teacher is Frank Dersjant, I am in the class Inf1C and my student number is 688208. This website gave me a lot of stress but I finally got there. 
+	This website was difficult to make, but I still enjoyed making it." />
 	<meta name="author" content="Sem Plaatsman" />
-	<meta name="keywords" content="HTML" />
+	<meta name="keywords" content="HTML,CSS,Webmarkup,Inholland,website,stress" />
 	<title> 
-	Assignment 3.2 | Inholland
+		index.html
 	</title>
-	
-	<link rel="icon" href="img/shulker/png)" sizes="16x16" type="image/png">
-</head>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<link 
+		rel = "stylesheet" 
+		href= "css/style.css" 
+		type= "text/css" 
+		/>
+</head> 
 
-<body>
-	<header>
-		<nav>
-			<ul>
-				<li>
-					<input type = "radio" name="company" value="sony" />
-					<label for="company">
-						Sony
-					</label>
-				</li>
-				<li>
-					<input type = "radio" name="company" value="microsoft" />
-					<label for="company">
-						Microsoft
-					</label>
-				</li>
-				<li>
-					<input type = "radio" name="company" value="nintendo" />
-					<label for="company">
-						Nintendo
-					</label>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<article>
+<body id="index-body">
+	<figure id="logo">
+		<img src="img/logo_image.jpg" alt="Logo, C&D, Corendon, Sem Plaatsman" title="Logo" width="50" height="25">
+	</figure>
+	<h1 id="title">Corendon</h1>
+	<h2 id="payoff">Altijd scherp!</h2>
+	
+	<nav id="hamburger-nav">
+		<label for="hamburger-button">&#9776;</label>
+		<input id="hamburger-button" type="checkbox"/>
+		
+		<ul id="hamburger-links">
+			<li> <a href="bestdestinations.html">Best destinations</a> </li>
+			<li> <a href="tickets.html">Tickets</a> </li>
+			<li> <a href="contact.html">Contact</a> </li>
+		</ul>
+	</nav>
+	
+	<aside>
+		<ol>
+			<li>Maldives</li>
+			<li>Sri Lanka</li>
+			<li>Dubai</li>
+			<li>Tunisia</li>
+			<li>Croatia</li>
+		</ol>
+	</aside>
+	
+	<video width="256" height="144" autoplay muted loop>
+		<source src="mp4/index_video.mp4" type="video/mp4" >
+		<source src="ogg/index_video.ogg" type="video/ogg" >
+	</video>
+	
+	<section id="index-articles">
+		<article id="dalyan-article">
+			<header>
+				<h1>Dalyan, Turkey</h1>
+			</header>
+			<main class="article-main">
+				<a href="https://www.corendon.nl/turkije/egeische-kust/dalyan" target="_blank" class="article-link">
+					<img id="dalyan-image" src="img/dalyan_image.jpg" alt="Dalyan, Turkey, Ray Harrington" title="Click to learn more about Dalyan" width="480" height="301	">
+				</a>
+				<p>Dalyan is a small peaceful fishing village in the province Muğla. It's located in between Marmaris and Fethiye near the south-west coast of Turkey. 
+				There are a lot of beautiful beaches to visit like the Iztuzu beach (also a breeding ground for the loggerhead sea turtle), Dalyanağzı beach, Aşı beach and Ekincik Beach. 
+				The Lycian tombs that we're cut out of rock on the side of a cliff (also shown on the picture) is one of the most famous sights in Dalyan and definitely worth visiting.</p>
+			</main>
+			<footer>
+				<footer class="copyright_text">&copy Ray Harrington | Used by Sem Plaatsman</footer> 
+				<a href="https://www.corendon.nl/turkije/egeische-kust/dalyan" target="_blank">More info</a>
+			</footer>
+		</article>
+		
+		<article id="istanbul-article">
+			<header>
+				<h1>Istanbul, Turkey</h1>
+			</header>
+			<main class="article-main">
+				<a href="https://www.corendon.nl/turkije/istanbul" target="_blank" class="article-link">
+					<img src="img/istanbul_image.jpg" alt="Istanbul, Turkey, Anna Berdnik" title="Click to learn more about Istanbul" width="480" height="320">
+				</a>
+				<p>Istanbul has it all: over 2500 years of history, culture, and traditions, amazing landmarks, vibrant nightlife, and breathtaking views. 
+				This transcontinental metropolis is a fast-paced cultural melting pot you can’t afford to miss. 
+				Rome and Istanbul are both over two-and-a-half millennia old, but for the majority of the time Istanbul was larger, more influential, and wealthier than Rome.
+				Istanbul has been the capital of four empires: the Roman Empire, the Byzantine Empire, the Latin Empire, the Byzantine Empire and the Ottoman Empire. 
+				Istanbul’s history is very rich, and remains of each of these empires can still be witnessed.</p>
+			</main>
+			<footer>
+				<footer class="copyright_text">&copy Anna Berdnik | Used by Sem Plaatsman</footer>
+				<a href="https://www.corendon.nl/turkije/istanbul" target="_blank">More info</a>
+			</footer>
+		</article>
+		
+		<article id="crete-article">
+			<header>
+				<h1>Crete, Greece</h1>
+			</header>
+			<main class="article-main">
+				<a href="https://www.corendon.nl/griekenland/kreta" target="_blank" class="article-link">
+					<img src="img/crete_image.jpg" alt="Crete, Greece, Evangelos Mpikakis" title="Click to learn more about Crete" width="480" height="270">
+				</a>
+				<p>The majestic and mythical Crete is Greek’s largest island, situated on the southern side of the Aegean Sea. 
+				With over 600 miles of coastline to play with, there is no shortage of beautiful beaches and scenic views. 
+				Home to ancient treasures, vibrant towns and sleepy villages, a holiday to Crete offers a taste of true Mediterranean life and a wealth of places to explore.
+				Its wild natural beauty is one of the many reasons people gravitate here. 
+				One of the most notable landmarks are the famous snow topped White Mountains – or Lefka Ori – in western Crete.</p>
+			</main>
+			<footer>
+				<footer class="copyright_text">&copy Evangelos Mpikakis | Used by Sem Plaatsman</footer> 
+				<a href="https://www.corendon.nl/griekenland/kreta" target="_blank">More info</a>
+			</footer>
+		</article>
+	</section>
+	
+	<p id="author-info">&copy 2021 Sem Plaatsman</p>
+	
+	<section class="cookie_statement">
 		<p>
-			Normal text
+			Cookie statement
 		</p>
-		<p>
-			<strong>
-				Used for warnings
-			</strong>
-		</p>
-		<p>
-			<b>
-				For headers
-			</b>
-		</p>
-		<p>
-			<em>
-				Used for emphasis
-			</em>
-		</p>
-		<p>
-			<i>
-				Just italic
-			</i>
-		</p>
-		<figure>
-			
-		</figure>
-	</article>
+	</section>
 </body>
 
 </html>

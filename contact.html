@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head lang="en">
+	<meta charset="utf-8" />
+	<meta name="description" content="Hello and welcome to my website. My name is Sem Plaatsman and I made this website for an assignment from Hogeschool Inholland Haarlem. 
+	My teacher is Frank Dersjant, I am in the class Inf1C and my student number is 688208. This website gave me a lot of stress but I finally got there. 
+	This website was difficult to make, but I still enjoyed making it." />
+	<meta name="author" content="Sem Plaatsman" />
+	<meta name="keywords" content="HTML,CSS,Webmarkup,Inholland,website,stress" />
+	<title> 
+	contact.html
+	</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<link 
+		rel = "stylesheet" 
+		href= "css/style.css" 
+		type= "text/css" 
+		/>
+</head>
+
+<body id="contact-body">
+	<figure id="logo">
+		<img src="img/logo_image.jpg" id="logo" alt="Logo, C&D, Corendon, Sem Plaatsman" title="Logo" width="50" height="25">
+	</figure>
+	<h1 id="title">Corendon</h1>
+	<h2 id="payoff">Altijd scherp!</h2>
+
+	<nav id="hamburger-nav">
+		<label for="hamburger-button">&#9776;</label>
+		<input id="hamburger-button" type="checkbox"/>
+		
+		<ul id="hamburger-links">
+			<li> <a href="index.html">Home</a></li>
+			<li> <a href="bestdestinations.html">Best destinations</a></li>
+			<li> <a href="tickets.html">Tickets</a> </li>
+		</ul>
+	</nav>
+	
+	<p id="contact-information">Here you can easily contact me if you have any questions or comments about me and/or my website via a contact form.</p>
+	
+	<form id="contact-form">
+		<fieldset>
+			<legend id="contact-legend"><strong>Contact form</strong></legend>
+				<p id="sidenote">&ast; = required</p>
+				<label>Name &ast;</label>
+				<input id="name-label" type="text" placeholder="Enter your full name here (required)" name="name" value="name" required>
+			
+				<label>Email &ast;</label>
+				<input id="email-label" type="text" placeholder="Enter your E-mail address here (required)" name="email" value="email" required>
+				
+				<label>Phone number</label>
+				<input id="phone-label" type="tel" placeholder="Enter your phone number here" name="phonenumber" value="phonenumber">
+				
+				<label>Message &ast;</label>
+				<textarea id="message-label" type="text" placeholder="Enter your message here (required)" name="message" value="message" required></textarea>
+				
+			<input id="send-button" type="submit" value="submit">
+		</fieldset>
+	</form>
+	
+	<aside id="traffic-products">
+		<article id="contact-product1">
+			<figcaption class="traffic-images">
+				<p class="traffic-text">Click one of the images below to learn more</p>
+			</figcaption>
+			<a href="https://www.corendon.nl/turkije/egeische-kust/dalyan" target="_blank">
+				<img src="img/dalyan2_image.jpg" alt="Dalyan, Turkey, Mert Kahveci" title="Click to learn more about Dalyan" width="300" height="200">
+			</a>
+			<footer class="copyright_text">&copy Mert Kahveci | Used by Sem Plaatsman</footer>
+		</article>
+		<article id="contact-product2">
+			<a href="https://www.corendon.nl/spanje/canarische-eilanden/tenerife" target="_blank">
+				<img src="img/tenerife_image.jpg" alt="Tenerife, Spain, Mihály Köles" title="Click to learn more about Tenerife" width="300" height="190">
+			</a>
+			<footer class="copyright_text">&copy Mihály Köles | Used by Sem Plaatsman</footer>
+		</article>
+		<article id="contact-product3">
+			<a href="https://www.corendon.nl/griekenland/rhodos" target="_blank">
+				<img src="img/rhodes_image.jpg" alt="Mallorca, Fabian Schneidereit" title="Click to learn more about Rhodes" width="300" height="200">
+			</a>
+			<footer class="copyright_text">&copy Fabian Schneidereit | Used by Sem Plaatsman</footer>
+		</article>
+	</aside>
+	
+	<p id="author-info">&copy 2021 Sem Plaatsman</p>
+	
+	<section class="cookie_statement">
+		<p>
+			Cookie statement
+		</p>
+	</section>
+</body>
+
+</html>
