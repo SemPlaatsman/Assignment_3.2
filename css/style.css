@@ -272,6 +272,11 @@ body #title {
 	padding-right: 7vw;
 }
 
+#index-body #author-info {
+	justify-content: flex-end;
+	align-self: flex-start;
+}
+
 #contact-body {
 	display: grid;
 	margin-left: 8px;
