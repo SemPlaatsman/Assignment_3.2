@@ -9,6 +9,76 @@ body {
 	background-color: #C5C5C5;
 }
 
+#dalyan-image {
+	width: 480px;
+	height: 320px;
+}
+
+#istanbul-image {
+	width: 480px;
+	height: 320px;
+}
+
+#crete-image {
+	width: 480px;
+	height: 270px;
+}
+
+#travel-video {
+	width: 256px;
+	height: 144px;
+}
+
+#paris-image {
+	width: 330px;
+	height: 220px;
+}
+
+#tokyo-image {
+	width: 330px;
+	height: 220px;
+}
+
+#rio-image {
+	width: 330px;
+	height: 220px;
+}
+
+#alanya-image {
+	width: 240px;
+	height: 160px;
+}
+
+#marmaris-image {
+	width: 240px;
+	height: 180px;
+}
+
+#mallorca-image {
+	width: 240px;
+	height: 160px;
+}
+
+#dalyan2-image {
+	width: 300px;
+	height: 200px;
+}
+
+#tenerife-image {
+	width: 300px;
+	height: 190px;
+}
+
+#rhodes-image {
+	width: 300px;
+	height: 200px;
+}
+
+#logo img {
+	width: 50px;
+	height: 25px;
+}
+
 #contact-legend {
 	text-transform: uppercase;
 }
