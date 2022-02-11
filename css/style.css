@@ -364,7 +364,7 @@ table th, table td {
 
 }
 
-@media screen and (max-width: 1179px) and (min-width: 601px) {
+@media screen and (max-width: 1179px) and (min-width: 481px) {
 /* Other background colors to know which media query i'm on */
 #index-body {background-color: #FF6700;}
 #bestdestinations-body {background-color: #FF6700;}
@@ -505,7 +505,7 @@ table th, table td {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 /* Other background colors to know which media query i'm on part 2 */
 #index-body {
 	background-color: #FFFF00;

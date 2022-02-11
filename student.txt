@@ -1,0 +1,4 @@
+Sem Plaatsman
+688208
+Inf1C
+https://github.com/SemPlaatsman/Assignment_3.2 (first commit: https://github.com/SemPlaatsman/Assignment_3.2/commit/35286db1eca27f337356e22c47bccf14446363a0 --- first commit with html edits: https://github.com/SemPlaatsman/Assignment_3.2/commit/058fe79da6c38fc49e1f8089b471c43ec1be7526 (<- didn't know if you meant this by first commit because the explanation was quite unclear)
